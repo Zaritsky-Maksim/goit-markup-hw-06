@@ -13,20 +13,20 @@
 </head>
 <body>
     <div class="container">
-<header>
-    <nav class="main-nav">
-        <a href=""><img src="/img/WebStudio.svg" alt="logos"></a>
-        <ul class="pagination">
-            <li class="item" id="portfolio-studio"><a href="/index.html">Студия</a></li>
-            <li class="item"><a href="/portfolio.html">Портфолио</a></li>
-            <li class="item"><a href="#contacts">Контакты</a></li>
-        </ul>
-        <ul class="aside">
-            <li class="item envelope"><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-            <li class="item smartphone"><a href="tel:+380961111111">+38 096 111 11 11</a></li>
-        </ul>
-    </nav>
-</header>
+    <header>
+        <nav class="main-nav">
+            <a href=""><img src="/img/WebStudio.svg" alt="logos"></a>
+            <ul class="pagination">
+                <li class="item" id="portfolio-studio"><a href="/index.html">Студия</a></li>
+                <li class="item"><a href="/portfolio.html">Портфолио</a></li>
+                <li class="item"><a href="#contacts">Контакты</a></li>
+            </ul>
+            <ul class="aside">
+                <li class="envelope"><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                <li class="smartphone"><a href="tel:+380961111111">+38 096 111 11 11</a></li>
+            </ul>
+        </nav>
+    </header>
 </div>
 <main>
     <section class="hero">
@@ -223,8 +223,8 @@
     </ul>
     </div> 
 </section>
-<div class="container">
-            <h2>Постоянные клиенты</h2>
+<h2>Постоянные клиенты</h2>
+<div class="container">       
 <div class="logo">
     <ul class="link-clients">
         <li class="link-logo">
@@ -265,7 +265,7 @@
 </div>
 </main>
 <footer>
-    <div class="container">
+  <div class="container">
     <nav class="nav-footer">
          <ul class="aside-footer">
                 <li><a href=""><img src="/img/WebStudio.svg" alt="logos"></a></li>
@@ -307,37 +307,73 @@
                     </li>
     </ul>
 </div>
+    <div class="form-footer">
+        <ul>
+            <li>
+                <label for="email">ПОДПИШИТЕСЬ НА РАССЫЛКУ</label>
+            </li>
+                <li>
+                    <input class="form-input-footer" type="email" name="name" id="email" placeholder="E-mail">
+                </li>
+        </ul>
+    </div>
+    <div>
+        <button class="subscribe-button">
+            <span>Подписаться</span>
+            <svg width="24px" height="24px">
+                <use href="./img/symbol.svg#send"></use>
+            </svg>
+        </button>
+    </div>
 </div>
 </footer>
 </div>
 <div class="backdrop is-hidden" data-modal>
     <div class="modal">
-        <button data-modal-close>Закрыть</button>
+        <button class="button-close" data-modal-close>
+            <svg class="close" width="18px" height="18px">
+            <use href="./img/symbol.svg#close"></use>
+        </button>
         <form class="forms">
             <ul class="information">
-                <li>
-                    <b>Оставьте свои данные, мы вам перезвоним</b>
-                    <label for="name">Имя</label>
-                    <input type="text" name="name" id="name">
+                <li><b>Оставьте свои данные, мы вам перезвоним</b></li>
+                    <li><label for="name">Имя</label></li>
+                <li class="form-svg">
+                    <input class="form-input" type="text" name="name" id="name"/>
+                    <span class="vector">
+                        <svg class="svg-vector" width="18px" height="18px">
+                        <use href="./img/symbol.svg#vector"></use>
+                    </span>
                 </li>
-                <li>
-                    <label for="tel">Телефон</label>
-                    <input type="tel" name="name" id="tel">
+                <li><label for="tel">Телефон</label></li>
+                <li class="form-svg">
+                    <input class="form-input" type="tel" name="name" id="tel">
+                    <span class="vector-1">
+                        <svg class="svg-vector" width="18px" height="18px">
+                        <use href="./img/symbol.svg#vector-1"></use>
+                    </span>
                 </li>
-                <li>
-                    <label for="email">Почта</label>
-                    <input type="email" name="name" id="email">
+                <li><label for="email">Почта</label></li>
+                <li class="form-svg">
+                    <input class="form-input" type="email" name="name" id="email">
+                    <span class="vector-2">
+                        <svg class="svg-vector" width="18px" height="18px">
+                        <use href="./img/symbol.svg#vector-2"></use>
+                    </span>
                 </li>
             </ul>
-                <label class="coment" for="coment">Коментарий</label>
-            <textarea 
-                name="coment" id="coment" cols="30" rows="10" placeholder="Введите текст">
-            </textarea>
-        <div role="group">
+               <div class="coment">
+                <label for="coment">Коментарий</label>
+                <textarea 
+                    name="coment" id="coment"  rows="10" placeholder="Введите текст">
+                </textarea>
+               </div>
+        <div class="agreement" role="group">
             <input type="checkbox" name="" value="agreement" id="agreement">
-            <label for="agreement">Соглашаюсь с рассылкой и принимаю Условия договора</label>
+            <label for="agreement">Я соглашаюсь с рассылкой и принимаю 
+                <a href="">Условия договора</a></label>
         </div>
-            <button type="submit">Отправить</button>
+            <button class="send" type="submit">Отправить</button>
         </form>
     </div>
 </div>
